@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>固定布局</title>
+	</head>
+	<style type="text/css">
+		nav{
+			padding: 10px 20px;
+			width: 150px;
+			float: left;
+			background: #ccc;
+			box-sizing: border-box;
+		}
+		nav ul li{
+			list-style-type: none;
+		}
+		
+		article{
+			background: #ffed53;
+			width: 600px;
+			float: left;
+			box-sizing: border-box;
+		}
+		aside{
+			background: #3f7ccf;
+			width: 210px;
+			float: left;
+			box-sizing: border-box;
+		}
+		header{
+			background: #f00;			
+		}
+		footer{
+			background: #666;
+			clear: both;
+			text-align: center;
+			
+		}
+	 	article .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		nav .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		
+		div .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		aside .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		header .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		footer .inner{
+			margin: 10px;
+			border: 3px solid red;
+			padding: 20px;
+		}
+		
+		.index{
+			width: 100%;
+			border: 2px solid red;
+			box-sizing: border-box;			
+		}
+	</style>
+	<body>
+		
+			<div id="container"></div><!--总-->
+			<header>
+				<div class="inner">
+					我们希望页眉与布局同款，而且他们默认就与布局同宽，在此我们只简单地为他们设定背景色，以便能看到他们在哪儿
+				</div>
+				
+			</header>
+			<div class="index">
+				 <nav>
+		      	
+		      <!--左导航栏-->
+		      
+		      	   <ul>
+		      	   	<div class="inner">
+		      	   		<li><a href="#">链接1</a></li>
+			      	   	<li><a href="#">链接2</a></li>
+			      	   	<li><a href="#">链接3</a></li>
+			      	   	<li><a href="#">链接4</a></li>
+			      	   	<li><a href="#">链接5</a></li>
+			      	   	<li><a href="#">链接6</a></li>
+			        	<li><a href="#">链接7</a></li>
+		      	   	</div>
+		      	   	
+		      	   </ul>
+		      	
+		      </nav>
+		    
+		      <article><!--中间--><!--article
+		      	爱泪扣
+		      html5的新标签。标签内容独立于文档的其余部分-->
+		      <div class="inner">
+		      	<p>钱袋子更鼓啦！去年安徽城镇居民人均可支配收入增长8.5%</p>
+		                          去年，全省城镇常住居民人均可支配收入同比增长8.5%。社会保险费政策阶段性实施 ，为企业减负26.8亿元。缓企稳岗补贴政策推行，帮助困业缓激社会保险费18.7亿元， 发放稳岗补贴10.3亿元，稳定就业岗位481.4万个。从2016年起两年来安置去产能分流职工6.2万，2017年起，实施为期三年的精准帮扶精准脱贫专项行动计划，支持大别山区等地的扶贫开发工作，帮助13.2万贫困劳动就业。五年来，全省新增就业人口335万人，共招录公务员3.3万人，培训120万人次	      	
+		      </div>
+		      </article>
+		     
+		      <aside><!--右边-->
+				   <div class="inner">
+					民生保障网进一步织密,企业退休人员基本养老金连续增加,月人均达到2232元,与五年前相比增长51.6%;城乡居民基础养老金最低标准提高17元:查处工资类案件2700件,清理拖欠农民工工资7.77亿元
+	   		       </div>
+		      </aside>
+			</div>
+		     
+		      
+	   		 <footer>
+	   		 	<div class="inner">
+	   		 	此时的页眉与布局同宽，其内容高度也比较合适，但是，页脚位于浮动元素后面所以就会尽量往上移动。解决则个问题也很简单
+	   		 	</div>
+	   		 </footer>
+	   		 
+		</body>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#container{
+			width: 960px;
+			margin: 0 auto;
+			border: 1px solid #ccc;			
+		}
+		
+	</style>	
+	
+</html>
